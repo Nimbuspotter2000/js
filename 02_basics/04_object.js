@@ -64,5 +64,47 @@ console.log(Object.entries(tinderUser)) //every key value pair as an array eleme
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn"));//true
 
+console.log("************ destructuring ***********")
+
+const course = {
+    courseName: "js in Hindi",
+    prince: "999",
+    courseInstructor: "Hitesh"
+}
+
+//course.courseInstructor
+
+const {courseInstructor: instructor} = course
+console.log(instructor);
+
+// const navbar = ({ company, location, yearFounded, founder }) => {
+//     console.log(`Welcome to ${company}`);
+//     console.log(`Location: ${location}`);
+//     console.log(`Founded in: ${yearFounded}`);
+//     console.log(`Founder: ${founder}`);
+// }
+
+// navbar({
+//     company: "Zomato",
+//     location: "Gurgaon",
+//     yearFounded: 2008,
+//     founder: "Deepinder Goyal"
+// });
+
+// {
+//     "name": "Anand",
+//     "courseName": "js in Hindi",
+//     "price": "free"
+// }
+
+//sometimes we get api in the form of array
+[
+    {},
+    {},
+    {}
+]
+
+//jason formatter to understand api responses
+
 
 
